@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a2a44; /* Fondo azul oscuro */
+    color: #f0f8ff; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside-left main aside-right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr; /* Dos columnas asides, una central para el main */
+    height: 100vh;
+}
+
+/* Header */
+#header {
+    grid-area: header;
+    background-color: #4682b4; /* Azul acero */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Navegación dentro del header */
+#header #nav {
+    margin-top: 10px;
+}
+
+#header #nav h2 {
+    font-size: 1.5em;
+    color: #f0f8ff;
+}
+
+/* Aside izquierdo */
+#aside-left {
+    grid-area: aside-left;
+    background-color: #5f9ea0; /* Azul cadete */
+    padding: 20px;
+    color: #fff;
+}
+
+/* Aside derecho */
+#aside-right {
+    grid-area: aside-right;
+    background-color: #5f9ea0; /* Azul cadete */
+    padding: 20px;
+    color: #fff;
+}
+
+/* Main */
+#main {
+    grid-area: main;
+    background-color: #2e3d56; /* Azul más oscuro */
+    padding: 20px;
+    color: #fff;
+}
+
+/* Estilo para los artículos */
+#article {
+    margin-top: 20px;
+}
+
+/* Secciones dentro del artículo */
+#article .keyword {
+    display: block;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #87ceeb; /* Azul cielo claro */
+    color: #1a2a44;
+    border-radius: 8px;
+}
+
+/* Enlaces */
+a {
+    color: #f0f8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #87ceeb; /* Azul cielo */
+}
+
+/* Listas de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    background-color: #4682b4; /* Azul acero */
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #5f9ea0; /* Azul cadete */
+}
+
+/* Footer */
+#footer {
+    grid-area: footer;
+    background-color: #4682b4; /* Azul acero */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
